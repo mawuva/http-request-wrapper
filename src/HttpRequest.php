@@ -43,26 +43,87 @@ class HttpRequest
      * Send request after building
      *
      * @param string $method
-     * @param string $requestUri
+     * @param string $requestUrl
      * @param array $options
      *
-     * @return GuzzleHttp\Client
+     * @return GuzzleHttp\Client|mixed
      */
-    public function send($method, $requestUri, $options = [])
+    public function send($method, $requestUrl, $options = [])
     {
-        return $this ->client->send($this ->makeRequest($method, $requestUri), $options);
+        return $this ->client->send($this ->makeRequest($method, $requestUrl), $options);
     }
 
     /**
      * Perform GET request
      *
-     * @param string $requestUri
+     * @param string $requestUrl
      * @param array $options
      *
-     * @return void
+     * @return GuzzleHttp\Client|mixed
      */
-    public function get($requestUri, $options = [])
+    public function get($requestUrl, $options = [])
     {
-        return $this ->client->send($this ->makeRequest('GET', $requestUri), $options);
+        return $this ->client->send($this ->makeRequest('GET', $requestUrl), $options);
+    }
+
+    /**
+     * Perform POST request
+     *
+     * @param string $requestUrl
+     * @param array $formParams
+     * @param array $options
+     *
+     * @return GuzzleHttp\Client|mixed
+     */
+    public function post($requestUrl, $formParams = [], $options = [])
+    {
+        $options['form_params'] = $formParams;
+
+        return $this ->client->send($this ->makeRequest('POST', $requestUrl), $options);
+    }
+
+    /**
+     * Perform PUT request
+     *
+     * @param string $requestUrl
+     * @param array $formParams
+     * @param array $options
+     *
+     * @return GuzzleHttp\Client|mixed
+     */
+    public function put($requestUrl, $formParams = [], $options = [])
+    {
+        $options['form_params'] = $formParams;
+
+        return $this ->client->send($this ->makeRequest('PUT', $requestUrl), $options);
+    }
+
+    /**
+     * Perform PATCH request
+     *
+     * @param string $requestUrl
+     * @param array $formParams
+     * @param array $options
+     *
+     * @return GuzzleHttp\Client|mixed
+     */
+    public function patch($requestUrl, $formParams = [], $options = [])
+    {
+        $options['form_params'] = $formParams;
+
+        return $this ->client->send($this ->makeRequest('PATCH', $requestUrl), $options);
+    }
+
+    /**
+     * Perform DELETE request
+     *
+     * @param string $requestUrl
+     * @param array $options
+     *
+     * @return GuzzleHttp\Client|mixed
+     */
+    public function delete($requestUrl, $options = [])
+    {
+        return $this ->client->send($this ->makeRequest('DELETE', $requestUrl), [], $options);
     }
 }

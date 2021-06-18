@@ -10,7 +10,7 @@
     "type": "library",
     "authors": [
         {
-            "name": "Ephraïm Seddor",
+            "name": "Ephra\u00efm Seddor",
             "email": "seddorephraim7@gmail.com",
             "role": "Developer"
         }
@@ -36,9 +36,9 @@
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
         "changelog": "vendor/bin/conventional-changelog --history"
-
     },
     "config": {
         "sort-packages": true
-    }
+    },
+    "version": "0.1.1"
 }

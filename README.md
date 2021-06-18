@@ -1,10 +1,6 @@
-# Very short description of the package
+# HTTP Request Wrapper
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/mawuekom/http-request-wrapper.svg?style=flat-square)](https://packagist.org/packages/mawuekom/http-request-wrapper)
-[![Total Downloads](https://img.shields.io/packagist/dt/mawuekom/http-request-wrapper.svg?style=flat-square)](https://packagist.org/packages/mawuekom/http-request-wrapper)
-![GitHub Actions](https://github.com/mawuekom/http-request-wrapper/actions/workflows/main.yml/badge.svg)
-
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+This package provide a simple and lighter wrapper around [Guzzle HTTP client](https://docs.guzzlephp.org/en/stable/index.html)
 
 ## Installation
 
@@ -47,6 +43,3 @@ If you discover any security related issues, please email seddorephraim7@gmail.c
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-## PHP Package Boilerplate
-
-This package was generated using the [PHP Package Boilerplate](https://laravelpackageboilerplate.com) by [Beyond Code](http://beyondco.de/).

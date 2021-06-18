@@ -1,6 +1,6 @@
 {
     "name": "mawuekom/http-request-wrapper",
-    "description": "Minimal wrapper around Guzzle HTTP client",
+    "description": "A simple and lighter wrapper around Guzzle HTTP client",
     "keywords": [
         "mawuekom",
         "http-request-wrapper"

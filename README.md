@@ -1,5 +1,7 @@
 # HTTP Request Wrapper
 
+[![License](https://poser.pugx.org/mawuekom/http-request-wrapper/license)](https://packagist.org/packages/mawuekom/http-request-wrapper)
+
 This package provide a simple and lighter wrapper around [Guzzle HTTP client](https://docs.guzzlephp.org/en/stable/index.html)
 
 ## Installation

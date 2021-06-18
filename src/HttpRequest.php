@@ -52,4 +52,17 @@ class HttpRequest
     {
         return $this ->client->send($this ->makeRequest($method, $requestUri), $options);
     }
+
+    /**
+     * Perform GET request
+     *
+     * @param string $requestUri
+     * @param array $options
+     *
+     * @return void
+     */
+    public function get($requestUri, $options = [])
+    {
+        return $this ->client->send($this ->makeRequest('GET', $requestUri), $options);
+    }
 }

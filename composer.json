@@ -40,5 +40,6 @@
     },
     "config": {
         "sort-packages": true
-    }
+    },
+    "version": "1.4.1"
 }
